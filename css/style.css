@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+:root {
+    --main-bg-color: #e50a14;
+    --dark-grey: #333333;
+    --light-grey: #737373;
+    --boder-radius: 5px;
+    --link-color: #2c71eb
+}
+
+body.login {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../assets/img/login_bg.jpeg');
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body nav {
+    margin-top: 16px;
+    margin-left: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body nav img {
+    width: 200px;
+    object-fit: contain;
+}
+
+span {
+    font-size: 14px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: var(--boder-radius);
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main form input {
+    color: white;
+    height: 40px;
+    margin-top: 8px;
+    background-color: var(--dark-grey);
+    border-radius: var(--boder-radius);
+    border: none;
+}
+
+
+main form input:active {
+    border: none;
+}
+
+
+main form button {
+    margin-top: 40px;
+    height: 40px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--boder-radius);
+}
+
+main form .form__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main form .form__actions .form__actions_remember {
+    display: flex;
+    align-items: center;
+}
+
+main form .form__actions .form__actions_remember span {
+    margin-left: 5px;
+}
+
+main form p {
+    color: var(--light-grey);
+}
+
+main form p span {
+    color: white;
+    font-size: 16px;
+}
+
+main form p.privacy {
+    font-size: 12px;
+}
+
+main form p.privacy a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+footer {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin-left: 100px;
+    color: var(--light-grey);
+}
+
+
+/* USERS */
+
+body.dark {
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+img.small {
+    width: 100px;
+    object-fit: contain;
+}
+
+main.users p {
+    font-size: 30px;
+}
+
+main.users,
+main.users .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.users .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+main.users .card span {
+    margin-top: 10px;
+    color: var(--light-grey);
+}
+
+main.users .card {
+    margin: 0 16px;
+    transition: ease-in;
+}
+
+main.users .card:hover {
+    transform: scale(1.2);
+}
+
+main.users .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+main.users button {
+    background-color: transparent;
+    padding: 4px 24px;
+    color: var(--light-grey);
+    border: 0.5px solid var(--light-grey);
+}
+
+/* HOME */
+
+body.home {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+nav.main_menu {
+    margin: 0;
+    width: 100vw;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+nav.main_menu .left {
+    display: flex;
+    color: white;
+}
+
+nav.main_menu ul {
+    display: flex;
+    list-style: none;
+}
+
+nav.main_menu ul li {
+    margin: 0 4px;
+}
+
+nav.main_menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.main_menu .right {
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav.main_menu .right img {
+    border-radius: 50%;
+    width: 25px;
+    object-fit: cover;
+}
+
+nav.main_menu .right span {
+    color: white;
+}
+
+.mx-4 {
+    margin: 0 8px;
+}
+
+
+
+main.home {
+    background: url('../assets/img/control-movie.jpeg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+main.home .actions {
+    display: flex;
+    position: absolute;
+    left: 45px;
+    bottom: 100px;
+}
+
+main.home .actions button {
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    margin: 0 4px;
+    border-radius: 5px;
+    border: none;
+}
+
+main.home .actions button:last-child {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main.home .actions button span {
+    margin: 0 4px;
+}
+
+section.categories {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+section.categories {
+    padding: 16px;
+}
+
+section.categories .list {
+    margin: 16px 0;
+
+}
+
+section.categories .list h4 {
+    margin: 0;
+    color: white;
+}
+
+section.categories .list .items {
+    display: flex;
+
+}
+
+section.categories .list .items img {
+    max-width: 23vw;
+    object-fit: cover;
+    margin: 0px 4px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    main.users .card-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    main.users p {
+        color: var(--light-grey);
+        font-size: 20px;
+    }
+}
